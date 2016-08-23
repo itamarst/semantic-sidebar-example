@@ -1,6 +1,7 @@
 window.codewithoutrules = {};
 
 codewithoutrules.ready = function() {
+    $("#toc").sidebar("setting", "dimPage", false);
     if (matchMedia) {
         var mq = window.matchMedia("(max-width: 700px)");
         mq.addListener(big_or_small);
@@ -9,10 +10,15 @@ codewithoutrules.ready = function() {
 
 
     function big_or_small(mq) {
+        // The sidebar *pushes* the pusher, the main content, so we
+        // add a class that reduces the pusher's width so the edge
+        // content isn't cut off.
         if (mq.matches) {
-	    $("#toc").removeClass("visible");
+	    $("#toc").sidebar("hide");
+            $("#main").removeClass("shrink")
         } else {
-            $("#toc").addClass("visible");
+            $("#toc").sidebar("show");
+            $("#main").addClass("shrink");
         }
     }
 

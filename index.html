@@ -19,7 +19,7 @@
 
   <body class="index">
     <!-- Fixed sidebar for wide screens -->
-    <div class="ui vertical inverted sidebar menu" id="toc">
+    <div class="ui vertical inverted visible fixed sidebar menu" id="toc">
       <div class="item">Home</div>
 <div class="item">Item 1</div>
 <div class="item">Item 2</div>
@@ -27,20 +27,19 @@
 
     </div>
 
-    <div class="pusher">
+    <div class="pusher" id="main-content">
       <!-- Top bar and pop-in side menu for narrow screens -->
-      <div class="ui fixed inverted main menu" id="top-menu">
-	<div class="ui container">
+      <div class="ui inverted top menu" id="top-menu">
+        <div class="ui container">
 	  <a class="launch icon item" id="sidebar-menu-button">
 	    <i class="content icon"></i>
 	  </a>
 	  <div class="item">
             Title goes here
 	  </div>
-	</div>
+        </div>
       </div>
-
-      <div class="ui container">
+      <div class="ui padded basic segment" id="main">
         <br>
         <p>Main content goes here.</p>
 

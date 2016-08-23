@@ -2,6 +2,10 @@
     display: none;
 }
 
+.shrink {
+    width: 60%;
+}
+
 @media only screen and (max-width: 700px) {
     #top-menu {
         display: block !important;
