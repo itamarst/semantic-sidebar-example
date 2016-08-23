@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Example site</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+
+    <link href="stylesheets/semantic.min.css" rel="stylesheet" />
+    <link href="stylesheets/all.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="javascripts/semantic.min.js"></script>
+    <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index">
+    <!-- Fixed sidebar for wide screens -->
+    <div class="ui vertical inverted sidebar menu" id="toc">
+      <div class="item">Home</div>
+<div class="item">Item 1</div>
+<div class="item">Item 2</div>
+<div class="item">Item 3</div>
+
+    </div>
+
+    <div class="pusher">
+      <!-- Top bar and pop-in side menu for narrow screens -->
+      <div class="ui fixed inverted main menu" id="top-menu">
+	<div class="ui container">
+	  <a class="launch icon item" id="sidebar-menu-button">
+	    <i class="content icon"></i>
+	  </a>
+	  <div class="item">
+            Title goes here
+	  </div>
+	</div>
+      </div>
+
+      <div class="ui container">
+        <br>
+        <p>Main content goes here.</p>
+
+        <p>Try resizing the page to see how the reactiveness works; get small enough and a top menu-bar shows up.</p>
+      </div>
+    </div>
+  </body>
+</html>
